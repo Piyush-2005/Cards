@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Sans-Serif;
+            font-size: 20px;
+            padding: 0 20px 30px 0;
+            line-height: 1.4;
+        }
+        .flex-container1{
+            display: flex;
+            width: 100%;
+            height: 500px;
+            border: 2px slateblue;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-around;
+
+        }
+        .flex-container2{
+            display: flex;
+            width: 100%;
+            height: 500px;
+            border: 2px slateblue;
+            flex-wrap: wrap;
+            align-content: center;
+            margin-top: 50px;
+            justify-content: space-around;
+
+        }
+        .flex-item{
+            width: 25%;
+            height: 420px;
+            background-color: lightskyblue;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 1em;
+            color: white;
+            line-height: 1.1;
+            border-radius: 5px;
+            margin: 20px;
+            /* transition: height, width 0.3s; */
+        }
+        /* .flex-item:hover{
+            height:430px; 
+            width:26%;
+        } */
+        #flex-item-1,
+        #flex-item-2,
+        #flex-item-3{
+            background-color: white;
+            box-shadow: rgb(204, 219, 232) 6px 6px 6px 6px, rgba(255, 255, 255, 0.5) 6px 6px 6px 6px;
+            transition: all 0.3s;
+        }
+        #flex-item-1{
+            margin-left: 30px;
+            background-image: url(box1.png);
+            background-size: 410px 200px;
+            background-repeat: no-repeat;
+        }
+        #flex-item-2{
+            margin-top: 50px;
+            background-image: url(box2.png);
+            background-size: 410px 200px;
+            background-repeat: no-repeat;
+            height: 460px;
+        }
+        #flex-item-3{
+            margin-left: 30px;
+            background-image: url(box2.png);
+            background-size: 410px 200px;
+            background-repeat: no-repeat;
+        }
+        #flex-item-1,
+        #flex-item-3{
+            margin-top: 70px;
+        }
+        #flex-item-1:hover,
+        #flex-item-2:hover,
+        #flex-item-3:hover{
+        background-size: 425px 200px;
+        height:430px; 
+        width:26%;
+        }
+        h2{
+            margin-top: 200px;
+        }
+        h2,
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: left;
+            color: black;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        button{
+            height: 40px; 
+            width: 120px; 
+            font-size: large; 
+            background-color: rgb(77, 77, 77); 
+            color: white; 
+            border-radius: 5px; 
+            border: 0px solid gray;
+            transition: height, width 0.3s;
+        }
+        button:hover{
+            cursor: pointer;
+            height: 42px; 
+            width: 125px;
+            background-color: rgb(105, 104, 104);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: 'Times New Roman', Times, serif; text-align: center;">Cards</h1>
+    <div class="flex-container1">
+        <div class="flex-item" id="flex-item-1">
+            <h2>Seamlessly Visualize Quality</h2>
+            <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+            <button>Here's Why</button>
+        </div>
+        <div class="flex-item" id="flex-item-2">
+            <h2>Completely Synergize</h2>
+            <p>Dynamically engage seamlessly visualize quality intelellctual capital without superior collaboration annd idea-sharing.</p>
+            <button>Here's How</button>
+        </div>
+        <div class="flex-item" id="flex-item-3">
+            <h2>Dynamically Procrastinate</h2>
+            <p>Completely synergize resource taxing relationships via premier niche markets.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+    <div class="flex-container2">
+        <div class="flex-item" id="flex-item-1">
+            <h2>Best in Class</h2>
+            <p>Imagine jumping intothat boat, and just letting it sail whereverthe wind takes you...</p>
+            <button>Just Do It...</button>
+        </div>
+        <div class="flex-item" id="flex-item-2">
+            <h2>Dynamically innovate supply chains</h2>
+            <p>Holistically predominate extensible testing procedures for reliable supply chains.</p>
+            <button>Just Do It...</button>
+        </div>
+        <div class="flex-item" id="flex-item-3">
+            <h2>Sanity Check</h2>
+            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <button>Just Do It...</button>
+        </div>
+    </div>
+</body>
+</html>
